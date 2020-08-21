@@ -9690,3 +9690,11 @@ textarea.form-control {
 .contact-tile{
   margin-bottom: 1rem;
 }
+.contact-link{
+  text-decoration: none;
+  color: inherit;
+}
+.social-links-header{
+  width: 100%;
+  text-align: center;
+}
