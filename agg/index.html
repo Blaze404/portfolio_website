@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Aggregator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+
+
+	<!-- SEO WITH META TAGS -->
+
+	<meta name="description" content="Portfolio Webpage of Mustafa Qazi. I am a fresher in Computer Science with interest	and have worked in Data Science. I am looking for opportunities where I can put my knowledge and skills for good use.">
+
+	<meta name="author" content="Abhimanyu Qazi">
+  
+	<meta name="robots" content="index, follow" />
+  
+	<meta name="keywords" content="Mustafa Qazi, Mustafa, Devyani Kulkarni, mus.qazi999@gmail.com, hackathon, computer science, government college of engineering aurangabad, geca, catalyst, aurangabad, maharashtra, india, designing,  computer science, ulkanagari, bachelor of engineering, radical innovations group, blockchain, machine learning, projects">
+  
+	<meta name="copyright" content="Devyani Sudhir Kulkarni">
+  
+	<meta name="DC.title" content="Mustafa Qazi Portfolio">
+  
+	<!-- END SEO WITH META TAGS -->
+
+
+
+	<!-- OPEN GRAPH -->
+
+	<meta property="og:title" content="Mustafa Qazi">
+	<meta property="og:site_name" content="Mustafa Qazi | Portfolio Website | Computer Science Graduate">
+	<meta property="og:url" content="https://mustafaqazi.me">
+	<meta property="og:description" content="I am a fresher in Computer Science with interest	and have worked in Data Science. I am looking for opportunities where I can put my knowledge and skills for good use.">
+	<meta property="og:type" content="profile">
+	<meta property="og:image" content="https://mustafaqazi.me/images/mustafa.jpeg">
+
+	<!-- END OPEN GRAPH -->
+
+	<!-- TWITTER GRAPH -->
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@DEVYANIKULKAR10">
+	<meta name="twitter:title" content="Mustafa Qazi | Portfolio Website | Computer Science Graduate">
+	<meta name="twitter:description" content="I am a fresher in Computer Science with interest	and have worked in Data Science. I am looking for opportunities where I can put my knowledge and skills for good use.">
+	<meta name="twitter:image" content="https://mustafaqazi.me/images/mustafa.jpeg">
+
+    <!-- END TWITTER GRAPH -->
+    
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+
+       
+</head>
+<body>
+
+        <div class="container">
+                <h3>Add Data</h3>
+                <!-- <p>The .table-bordered class adds borders to a table:</p> -->
+                <form action="">            
+                <table id="maintable" class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th>Current Value</th>
+                      <th>Profit</th>
+                      <th>Percent</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> 
+                          <div class="form-group">
+                            <input type="text" value="0" class="form-control current">
+                          </div> 
+                        </td>
+                      <td>
+                            <div class="form-group">
+                                    <input type="text" value="0" class="form-control profit">
+                            </div> 
+                      </td>
+                      <td>
+                            <div class="form-group">
+                                    <input type="text" value="0" class="form-control percent">
+                             </div> 
+                      </td>
+                    </tr>
+                   
+                    
+                  </tbody>
+                </table>
+            </form>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12" style="align-content: center; text-align:center">
+                        <button class="btn btn-primary" id="addmore" >Add more</button>
+                        <button class="btn btn-warning" id="remove" >Delete Last</button>
+                    </div>
+                </div>
+                <div class="row" style="margin-top: 2%">
+                    <div class="col-md-4">
+                            <h4>Total Profit: <span id="totalprofit">0</span></h4>
+                    </div>
+                    <div class="col-md-4" style="align-content: center; text-align:center">
+                        <h4>Average Percentage: <span id="averagePercent">0</span></h4>
+                    </div>
+                    <div class="col-md-4">
+                            <h4>Total Invested: <span id="totalinvest">0</span></h4>
+                    </div>
+                </div>
+                <div class="row" >
+                        <div class="col-md-4">
+                                <h4>Total Current: <span id="totalcurrent">0</span></h4>
+                        </div>
+                        <div class="col-md-4" style="align-content: center; text-align:center">
+                            <h4>Mean profit difference: <span id="meanprofitdiff">0</span></h4>
+                        </div>
+                        <div class="col-md-4">
+                                <h4>Nominal Profit: <span id="nominalprofit">0</span></h4>
+                        </div>
+                    </div>
+            </div>
+
+              </div>
+           
+              
+              <script>
+              
+              function calculate_kpis(){
+                
+                var currents = [];
+                var profits = [];
+                var percentages = [];
+
+                var totalProfit = 0;
+                var totalInvest = 0;
+                var averagePercent = 0;
+                var totalCurrent = 0;
+
+                $('.current').each(function(i, obj) {
+                    // console.log($(obj).val());
+                    currents.push( parseFloat($(obj).val()));
+                });
+                $('.profit').each(function(i, obj) {
+                    // console.log($(obj).val());
+                    profits.push( parseFloat($(obj).val()));
+                });
+                $('.percent').each(function(i, obj) {
+                    // console.log($(obj).val());
+                    percentages.push( parseFloat($(obj).val()));
+                });
+                
+                // console.log(currents);
+                // console.log(profits);
+                // console.log(percentages);
+
+                var running_multiplication = 0;
+
+                for( i=0; i<currents.length; i++){
+                    totalInvest = totalInvest + ( currents[i] - profits[i] );
+                    totalProfit = totalProfit + profits[i];
+
+                    running_multiplication = running_multiplication + ( currents[i] - profits[i] )*percentages[i];
+                    totalCurrent = totalCurrent + currents[i];
+                }
+                var totalInvest1 = 0;
+                if (totalInvest==0){
+                    totalInvest1 = 1;
+                }                
+                else{
+                    totalInvest1 = totalInvest;
+                }
+                averagePercent = running_multiplication / totalInvest1;
+
+                var profitDiffSum = 0;
+                var averageProfitDiff = 0;
+                var nominalprofit = 0;
+                
+                for( i=0; i<profits.length; i++){
+                    profitDiffSum = profitDiffSum + (percentages[i] - averagePercent);
+                }
+                averageProfitDiff = profitDiffSum / profits.length;
+                nominalprofit = (totalProfit / totalInvest ) * 100;
+
+                $('#totalprofit').html(totalProfit.toFixed(3));
+                $('#averagePercent').html(averagePercent.toFixed(3));
+                $('#totalinvest').html(totalInvest.toFixed(3));
+                $('#totalcurrent').html(totalCurrent.toFixed(3));
+                $('#meanprofitdiff').html(averageProfitDiff.toFixed(3));
+                $('#nominalprofit').html(nominalprofit.toFixed(3));
+                
+              };
+
+                $(document).ready(function(){
+                    $('#addmore').click(function(e){
+                        $('#maintable tr:last').after('<tr> <td><div class="form-group"><input type="text" value="0" class="form-control current"></div></td> <td><div class="form-group"><input type="text" value="0" class="form-control profit"></div></td> <td><div class="form-group"><input type="text" value="0" class="form-control percent"></div></td></tr>');
+                        $("input").unbind();
+                        $("input").change(function() {
+                                calculate_kpis();
+                        });
+                    });
+
+                    $('#remove').on("click", function(){
+                            $('#maintable tr:last').remove();
+                        })
+
+                        $("input").change(function() {
+                            calculate_kpis();
+                        });
+                })
+              </script>
+             
+                
+             
+
+
+</body>
+</html>
